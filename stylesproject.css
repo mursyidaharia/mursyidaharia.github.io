@@ -1,0 +1,112 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 Nov 2023, 8:46:38 PM
+    Author     : cdah0
+*/
+
+/* contact-styles.css */
+
+#projecthead {
+    margin-top: 20px;
+    margin-bottom: 34.3px;
+    font-family: fantasy;
+    font-size: 60px;
+    color: white; 
+}
+
+#center {
+    display: flex;
+    justify-content: center; /* Adjusted to space between the social boxes and contact form */
+    flex-direction: row; 
+    align-items: flex-start; /* Align items to the top */
+}
+
+.project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+}
+
+img{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-out; 
+    cursor: pointer;
+}
+
+.project:hover img {
+    transform: scale(1.1); 
+}
+
+
+.title{
+    font-family: 'Georgia';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.project:hover .desc{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.desc{
+    font-family: Georgia;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    border-radius: 8px;
+    width: 102%;
+    bottom: -5%;
+    text-align: justify;
+}
+
+/* Media query for screens up to 767px (mobile) */
+@media screen and (max-width: 767px) {
+    #projecthead {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        font-size: 37px;
+    }
+
+    #center {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .project {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    img{
+        width: 156px;
+        height: auto;
+    }
+
+    .title{
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+
+    .desc{
+        padding: 6px;
+        font-size: 10px;
+    }
+
+}

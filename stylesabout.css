@@ -1,0 +1,64 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23 Nov 2023, 12:55:49 AM
+    Author     : cdah0
+*/
+
+#about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+#about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    max-width: 600px;
+    color: white;
+}
+
+.about-text h2 {
+    font-family: Copperplate;
+    font-size: 40px;
+}
+
+.about-text p {
+    font-family: Georgia;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* Media query for screens up to 767px (mobile) */
+@media screen and (max-width: 767px) {
+    #about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #about-image img {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+}
